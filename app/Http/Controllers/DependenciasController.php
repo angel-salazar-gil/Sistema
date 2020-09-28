@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Dependencia;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 
 class DependenciasController extends Controller
 {
@@ -22,7 +23,10 @@ class DependenciasController extends Controller
      */
     public function index()
     {
-        return view('dependencias.index');
+        $dependencias = DB::table('tdependencias')->get();
+
+        //dd($dependencias);
+        return view('dependencias.index', ['dependencias' => $dependencias]);
     }
 
     /**
