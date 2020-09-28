@@ -50,13 +50,13 @@
                                             <div class="form-button-action">
                                                 
                                                 @if ($dependencia->depe_revoke == 0)
-                                                    <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
+                                                    <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Habilitado">
                                                         {{--<i class="fa fa-edit"></i>--}}
                                                         Habilitado
                                                     </button>
                                                 @endif
                                                 @if ($dependencia->depe_revoke == 1)
-                                                    <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
+                                                    <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Deshabilitado">
                                                         {{--<i class="fa fa-times"></i>--}}
                                                         Deshabilitado
                                                     </button>
